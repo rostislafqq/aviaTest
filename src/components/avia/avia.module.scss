@@ -1,0 +1,130 @@
+.wrapper{
+    width: fit-content;
+    margin: 100px auto;
+  
+    .searchForm{
+        border: 1px solid #000000;
+        border-radius: 15px 15px 0px 0px;
+        background-color: #5C87DB;
+        padding: 17px 30px 30px 30px;
+        display: flex;
+        
+        .inputBar:not(:last-child){
+            margin-right: 25px;
+        }
+        
+      
+        .inputBar{
+        
+            display: flex;
+            flex-direction: column-reverse;
+            .input{
+                border: none;
+                width: 196px;
+                border-radius: 10px;
+                padding: 12px 0px 12px 12px;
+                font-weight: 700;
+                font-size: 14px;
+                color: #5C5C5C;
+               width: fit-content;
+
+            } 
+            .input:focus{
+
+                color: 
+                #5C5C5C;
+            }
+            .input::-webkit-input-placeholder {   
+                font-family: 'Roboto', sans-serif;
+                color: #B7BAC1
+             }
+            
+            
+            .inputDate[type=date]::-webkit-calendar-picker-indicator{
+                background:url("../../assets/img/calendar.svg") #f7f9fc no-repeat 0% 80%;
+                margin-right: 6px;
+                 
+            }
+            
+            .inputDate{
+                border: none;
+                width: 184px;
+                border-radius: 10px;
+                padding: 12px;
+                font-weight: 700;
+                font-size: 14px;
+                color: #B7BAC1 ;
+                display: flex;
+                flex-direction: row-reverse;
+                position: relative;
+            }
+           
+             
+            .inputDate__Active[type=date]::-webkit-calendar-picker-indicator{
+                background:url("../../assets/img/calendarActive.svg") #f7f9fc no-repeat 0% 80%;
+                margin-right: 6px;
+            }
+            .inputDate__Active{
+                border: none;
+                width: 184px;
+                border-radius: 10px;
+                padding: 12px;
+                font-weight: 700;
+                font-size: 14px;
+                color: #5C5C5C;
+                display: flex;
+                flex-direction: row-reverse;
+            }
+            span{
+                position: absolute;
+                width: 25px;
+                height: 1px;
+               
+                border-top:1px dashed #fff;
+                margin-left: 208px;
+                margin-bottom: 20px;
+            }
+            
+           
+            .label{
+                color: #FFFFFF;
+                
+                font-weight: 400;
+                font-size: 11px;
+            }
+        }
+    }
+    .searchFooter{
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 23px 29px 23px 0;
+        box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+border-radius: 0px 0px 15px 15px;
+        a{
+            button{
+                font-weight: 400;
+                font-size: 14px;
+                color: #fff;
+                border: none;
+                background: #5C87DB;
+                border-radius: 10px;
+                padding: 10px 33px;
+                cursor: pointer;
+
+            }
+            button:hover{
+                transition: .3s;
+                background: #3E67B7;
+            }
+            button:active{
+                transition: .3s;
+                background: #5C87DB;
+                box-shadow: 0px 4px 4px rgba(92, 135, 219, 0.15);
+                color: rgba(255, 255, 255, 0.5);
+            }
+            button:disabled{
+                background: #B7BAC1;
+            }
+        }
+    }
+}
